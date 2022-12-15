@@ -1,11 +1,17 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import "./App.css";
+import React from "react";
+import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
+import { Navbar } from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello</h1>
+    <div className="app">
+      <Navbar />
+      <Header />
+      <About />
+      <Work />
+      <Skills />
+      <Testimonial />
+      <Footer />
     </div>
   );
 }
