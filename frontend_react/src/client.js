@@ -1,14 +1,13 @@
-import sanityClient from '@sanity/client';
-import imageUrlBuilder from '@sanity/image-url';
-
-
+// require("dotenv").config();
+import sanityClient from "@sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
+console.log();
 export const client = sanityClient({
-  
   projectId: import.meta.env.VITE_SANITY_STUDIO_API_PROJECT_ID,
-  dataset: 'production',
-  apiVersion: '2022-02-01',
+  dataset: "production",
+  apiVersion: "2022-02-01",
   useCdn: true,
-  token: import.meta.env.VITE_SANITY_TOKEN,
+  token: import.meta.env.VITE_REACT_APP_SANITY_PROJECT_TOKEN,
 });
 
 const builder = imageUrlBuilder(client);
