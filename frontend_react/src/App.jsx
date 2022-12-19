@@ -7,7 +7,7 @@ function App() {
   return (
     //DO NOT include social icons,side dots or copyright footer on these pages
     //we will do that after, on the global scale
-    <div className="app">
+    <div>
       {/* TODO: assigned to Zac */}
       <Navbar />
       {/* TODO: assigned to Aftab */}
