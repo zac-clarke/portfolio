@@ -10,11 +10,11 @@ function App() {
     <div className="app">
       {/* TODO: assigned to Zac */}
       <Navbar />
-      {/* TODO: assigned to Aftab */}
+      {/* Done! assigned to Aftab */}
       <Header />
       {/* TODO: assigned to Patrick */}
       <About />
-      {/* TODO: assigned to Julieta */}
+      {/* Done! assigned to Julieta */}
       <Work />
       {/* TODO: assigned to Aftab */}
       <Skills />
