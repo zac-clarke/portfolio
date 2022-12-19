@@ -1,0 +1,44 @@
+.app__about {
+    // flex: 1;
+    // width: 100%;
+    // flex-direction: column;
+    @apply flex-1 w-full flex-col
+  }
+  
+  .app__profiles {
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-start;
+    // flex-wrap: wrap;
+    // margin-top: 2rem;
+    @apply flex justify-center items-start flex-wrap mt-8;
+  }
+  
+  .app__profile-item {
+    // width: 190px;
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    // flex-direction: column;
+    // margin: 2rem;
+  
+    img {
+    //   width: 100%;
+    //   height: 170px;
+    //   border-radius: 15px;
+    //   object-fit: cover;
+      @apply w-full h-[170px] xxl:h-[320px] rounded-[15px] object-cover;
+    }
+  
+    @media screen and (min-width: 2000px) {
+    //   width: 370px;
+    //   margin: 2rem 4rem;
+  
+    //   img {
+    //     height: 320px;
+    //   }
+    }
+
+
+    @apply w-[190px] xxl:w-[370px] flex flex-col gap-[2rem] m-[2rem] xxl:my-8 xxl:mx-16 justify-start items-start;
+  }
