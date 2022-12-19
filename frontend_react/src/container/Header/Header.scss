@@ -12,8 +12,7 @@
 // }
 
 #home {
-  background: url("../../assets/bgIMG.png");
-  @apply relative bg-cover bg-center bg-repeat;
+  @apply relative bg-[url('../../assets/bgIMG.png')] bg-cover bg-center bg-repeat;
   
   .app__wrapper {
     @apply p-0;
@@ -42,7 +41,7 @@
 // }
 
 .app__header {
-  @apply flex-1 w-full h-full flex-col pt-24 px-8 pb-0 lg:flex-row xxl:pt-32
+  @apply flex-1 flex-col w-full h-full pt-24 px-8 pb-0 lg:flex-row xxl:pt-32
 }
 
 // .app__header-info {
