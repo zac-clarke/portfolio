@@ -12,8 +12,8 @@
 // }
 
 #home {
-  background: url("../../assets/bgIMG.png");
-  @apply relative bg-cover bg-center bg-repeat;
+//   background: url("../../assets/bgIMG.png");
+  @apply relative bg-home bg-cover bg-center bg-repeat;
   
   .app__wrapper {
     @apply p-0;
