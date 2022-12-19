@@ -65,7 +65,7 @@
   // text-align: center;
   // color: var(--black-color);
   // text-transform: capitalize;
-  @apply text-[2rem] md:text-[2.75rem] xxl:text-[4rem] font-extrabold text-center text-black capitalize;
+  @apply text-3xl md:text-5xl xxl:text-6xl font-extrabold text-center text-black capitalize;
 
   span {
     // color: var(--secondary-color);
