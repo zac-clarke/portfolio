@@ -4,9 +4,6 @@ module.exports = {
   mode: "jit", // just in time (loads ?? only hwn needed)
   theme: {
     extend: {
-      backgroundImage: {
-        'home': "url('../../assets/bgIMG.png')",
-      },
       colors: {
         primary: "#edf2f8",
         secondary: "#313bac",
