@@ -37,7 +37,7 @@
   // @media screen and (max-width: 450px) {
   //   padding: 4rem 1rem 2rem;
   // }
-  @apply flex-1 w-full flex-col px-4 pt-16 pb-8 md:py-16 md:px-8;
+  @apply flex-1 w-full flex-col px-4 pt-16 pb-8 xs:py-16 xs:px-8;
 }
 
 .copyright {
@@ -65,7 +65,7 @@
   // text-align: center;
   // color: var(--black-color);
   // text-transform: capitalize;
-  @apply text-[2rem] sm:text-[2.75rem] xxl:text-[4rem] font-extrabold text-center text-black capitalize;
+  @apply text-[2rem] xs:text-[2.75rem] xxl:text-[4rem] font-extrabold text-center text-black capitalize;
 
   span {
     // color: var(--secondary-color);
@@ -98,7 +98,7 @@
   // font-weight: 800;
   // color: var(--black-color);
   // text-align: left;
-  @apply text-[0.9rem] sm:text-base font-extrabold text-black text-left xxl:text-3xl;
+  @apply text-[0.9rem] xs:text-base font-extrabold text-black text-left xxl:text-3xl;
 
   // @media screen and (min-width: 2000px) {
   //   font-size: 2rem;
