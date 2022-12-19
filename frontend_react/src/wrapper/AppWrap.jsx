@@ -3,7 +3,7 @@ import React from 'react';
 
 const AppWrap = (Component, idName, classNames) => function HOC() {
   return (
-    <div id={idName} className={`container mx-auto ${classNames}`}>
+    <div id={idName} className={` mx-auto ${classNames}`}>
       {/* <SocialMedia /> */}
       <div className="flex flex-col items-center justify-center w-[358px] md:w-full">
         <Component />

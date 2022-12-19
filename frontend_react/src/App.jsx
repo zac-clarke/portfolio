@@ -20,8 +20,10 @@ function App() {
       {/* TODO: assigned to Aftab */}
       <Skills />
       {/* TODO: assigned to Patrick */}
+      {/* <div className="mx-auto"> */}
       <Testimonial />
       {/* TODO: assigned to Julieta */}
+      {/* </div> */}
       <Footer />
     </div>
   );
