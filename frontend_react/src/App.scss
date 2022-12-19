@@ -60,12 +60,12 @@
 }
 
 .head-text {
-  font-size: 2.75rem;
-  font-weight: 800;
-  text-align: center;
-  color: var(--black-color);
-  text-transform: capitalize;
-  // @apply text-3xl md:text-5xl xxl:text-6xl font-extrabold text-center text-black capitalize;
+  // font-size: 2.75rem;
+  // font-weight: 800;
+  // text-align: center;
+  // color: var(--black-color);
+  // text-transform: capitalize;
+  @apply text-3xl md:text-5xl xxl:text-6xl font-extrabold text-center text-black capitalize;
 
   span {
     // color: var(--secondary-color);
