@@ -11,7 +11,9 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
-        <img src={images.logo} alt="logo" />
+        <a href="#home">
+          <img src={images.logo} alt="logo" />
+        </a>
       </div>
       <ul className="app__navbar-links">
         {["home", "about", "work", "skills", "contact"].map((item) => (
@@ -28,11 +30,11 @@ const Navbar = () => {
         <AnimatePresence>
           {toggle && (
             <motion.div 
-                initial={{ x: 300 }}
-                animate={{ x: 0 }}
-                exit={{ x: 300 }}
+                initial={{ x: 600 }}
+                animate={{ x: 150 }}
+                exit={{ x: 600 }}
                 // whileInView={{ x: [300, 0] }} 
-                transition={{ duration: 0.85, ease: "easeOut" }}
+                transition={{ duration: .9, ease: "easeOut" }}
             >
               <HiX onClick={() => setToggle(false)} />
               <ul>
