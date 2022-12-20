@@ -22,12 +22,12 @@
     // display: flex;
     // justify-content: flex-start;
     // align-items: center;
-    @apply flex justify-start items-center ;
+    @apply flex justify-start items-center;
   
     img {
     //   width: 90px;
     //   height: 20px;
-      @apply w-[90px] h-[20px] xxl:w-[180px] xxl:h-[40px] ;
+      @apply w-[90px] h-[20px] xxl:w-[180px] xxl:h-[40px];
     //   TODO: xxl: w-[180px] h-[40px]
   
       // @media screen and (min-width: 2000px) {
@@ -75,20 +75,20 @@
   
         // transition: all 0.3s ease-in-out;
 
-        @apply  text-gray no-underline flex-col uppercase font-medium transition-all delay-300 ease-in-out md:flex  ;
+        @apply  text-gray no-underline flex-col uppercase font-medium transition-all duration-300 ease-in-out md:flex  hover:text-secondary;
   
-        &:hover {
-        //   color: var(--secondary-color);
-          @apply text-secondary
-        }
+        // &:hover {
+        // //   color: var(--secondary-color);
+        //   @apply text-secondary
+        // }
       }
   
-      &:hover {
-        div {
-        //   background: orange;
-          @apply bg-secondary ; 
-        }
-      }
+      // &:hover {
+      //   div {
+      //   //   background: orange;
+      //     @apply bg-secondary ; 
+      //   }
+      // }
     }
   
     // @media screen and (max-width: 900px) {
@@ -106,7 +106,7 @@
     // justify-content: center;
     // align-items: center;
     // background-color: blue; 
-    @apply w-[35px] h-[35px] rounded-full  relative flex justify-center items-center bg-secondary sm:hidden  ;
+    @apply w-[35px] h-[35px] rounded-full  relative flex justify-center items-center bg-secondary sm:hidden cursor-pointer ;
   
   
     svg {
@@ -118,32 +118,34 @@
     }
   
     div {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      right: 0;
-      z-index: 5;
+      // position: fixed;
+      // top: 0;
+      // bottom: 0;
+      // right: 0;
+      // z-index: 5;
   
-      padding: 1rem;
+      // padding: 1rem;
   
-      width: 80%;
-      height: 100vh;
+      // width: 80%;
+      // height: 100vh;
       
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      flex-direction: column;
+      // display: flex;
+      // justify-content: flex-end;
+      // align-items: flex-end;
+      // flex-direction: column;
       
-      background: url('../../assets/bgWhite.png');
-      background-color: white;
-      background-size: cover;
-      background-repeat: repeat;
+      // background: url('../../assets/bgWhite.png');
+      // background-color: white;
+      // background-size: cover;
+      // background-repeat: repeat;
   
       /* top box shadow */
-      box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
-      @apply fixed  top-0 right-0 bottom-0  z-[5] p-[1rem] w-4/5 h-screen 
-      flex  flex-col bg-[url('../../assets/bgWhite.png')] 
-      bg-white bg-cover bg-repeat shadow-lg md:hidden ;
+      // box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+      @apply 
+      fixed inset-y-0 right-0 z-[5] p-[1rem] w-4/5 h-screen 
+      flex justify-end items-end flex-col
+      bg-[url('../../assets/bgWhite.png')] bg-white bg-cover bg-repeat
+      shadow-[0_0_20px] shadow-black/10 md:hidden ;
   
       svg {
         // width: 35px;
@@ -168,25 +170,25 @@
         @apply m-1 list-none m-0 p-0 h-full w-full flex justify-start items-start flex-col;
   
         li {
-          margin: 1rem;
+          // margin: 1rem;
           @apply m-4;
   
           a {
-            color: gray;
+            // color: gray;
             // text-decoration: none;
-            font-size: 1rem;
-            text-transform: uppercase;
-            font-weight: 500;
+            // font-size: 1rem;
+            // text-transform: uppercase;
+            // font-weight: 500;
   
-            transition: all 0.3s ease-in-out;
+            // transition: all 0.3s ease-in-out;
 
-            @apply text-gray no-underline font-medium uppercase transition-all delay-300;
+            @apply text-base text-gray hover:text-secondary no-underline font-medium uppercase transition-all ease-in-out duration-300;
   
-            &:hover {
-                //secondary color
-              color: blue;
-              @apply text-secondary;
-            }
+            // &:hover {
+            //     //secondary color
+            //   color: blue;
+            //   @apply text-secondary;
+            // }
           }
         }
       }
