@@ -49,7 +49,7 @@ const Skills = () => {
               <motion.div className="app__skills-exp-works">
                 {experience.works.map((work) => (
                   <div key={work.name} className="relative">
-                    <motion.div whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }} className="app__skills-exp-work" id={work.name}>
+                    <motion.div id={work.name} whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }} className="app__skills-exp-work">
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>

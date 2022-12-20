@@ -5,12 +5,12 @@
 .app__skills-container {
   @apply w-full md:w-4/5
     mt-12
-    flex flex-col xs:flex-row;
+    flex flex-col sm:flex-row;
 }
 
 .app__skills-list {
   @apply flex flex-1 flex-wrap
-    justify-center items-center md:justify-start md:items-start
+    justify-center items-start md:justify-end
     mr-0 md:mr-20;
 }
 
@@ -34,18 +34,16 @@
 }
 
 .app__skills-exp {
-  @apply flex flex-1 flex-col justify-start items-start
+  @apply flex flex-1 flex-col justify-start items-center sm:items-start
     mt-8 md:mt-auto;
 }
 
 .app__skills-exp-item {
-  @apply w-full my-4 mx-0
+  @apply my-4 mx-0
     flex flex-row justify-start items-start;
 }
 
 .app__skills-exp-works {
-  @apply flex-1;
-
   .app__skills-exp-work {
     @apply flex flex-col justify-start items-start mb-4 cursor-pointer;
 
