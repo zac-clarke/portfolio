@@ -1,177 +1,59 @@
 .app__works {
-    // flex: 1;
-    // width: 100%;
-    // flex-direction: column;
     @apply flex-1 w-full flex-col;
 }
   
 .app__work-filter {
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: flex-start;
-    // align-items: center;
-    // flex-wrap: wrap;
-  
-    // margin: 4rem 0 2rem;
     @apply flex flex-row justify-start items-center flex-wrap mt-16 mb-8 mx-0;
   
     .app__work-filter-item {
-    //   padding: 0.5rem 1rem;
-    //   border-radius: 0.5rem;
-    //   background-color: #fff;
-    //   color: #000;
-    //   font-weight: 800;
-  
-    //   cursor: pointer;
-    //   transition: all 0.3s ease;
-    //   margin: 0.5rem;
-  
-    //   &:hover {
-    //     @apply bg-secondary;
-    //     color: #fff;
-    //   }
-  
-    //   @media screen and (min-width: 2000px) {
-    //     padding: 1rem 2rem;
-    //     border-radius: 0.85rem;
-    //   }
-
       @apply py-2 xxl:py-4 xxl:px-8 px-4 rounded-lg xxl:rounded-2xl bg-white text-black font-extrabold cursor-pointer m-2 hover:bg-secondary hover:text-white transition-all duration-300;
     }
   
     .item-active {        
-    //   color: #fff;
       @apply bg-secondary text-white;
     }
 }
   
 .app__work-portfolio {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-    // align-items: center;
     @apply flex flex-wrap justify-center items-center;
   
     .app__work-item {
-    //   width: 270px;
-    //   flex-direction: column;
-  
-    //   margin: 2rem;
-    //   padding: 1rem;
-    //   border-radius: 0.5rem;
-    //   background-color: #fff;
-    //   color: #000;
-  
-    //   cursor: pointer;
-    //   transition: all 0.3s ease;
-  
-    //   &:hover {
-    //     box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
-    //   }
-  
-    //   @media screen and (min-width: 2000px) {
-    //     // width: 470px;
-    //     padding: 1.25rem;
-    //     border-radius: 0.75rem;
-    //   }
-  
-    //   @media screen and (max-width: 300px) {
-    //     width: 100%;
-    //     margin: 1rem;
-    //   }
-
       @apply w-full xs:w-72 xxl:w-[470px] m-4 xs:m-8 p-4 xxl:p-5 flex-col 
       rounded-lg xxl:rounded-xl bg-white text-black cursor-pointer 
       shadow-sm hover:shadow-2xl transition-all duration-300;
-    //   transition: all 0.3s ease;
     }
 }
   
 .app__work-img {
-    // width: 100%;
-    // height: 230px;
-  
-    // position: relative;
+    @apply w-full h-[230px] xxl:h-[350px] relative;
   
     img {
-    //   width: 100%;
-    //   height: 100%;
-    //   border-radius: 0.5rem;
-    //   object-fit: cover;
       @apply w-full h-full rounded-lg object-cover;
-    }
-  
-    // @media screen and (min-width: 2000px) {
-    //   height: 350px;
-    // }
-    @apply w-full h-[230px] xxl:h-[350px] relative;
+    }  
 }
   
 .app__work-hover {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-    // bottom: 0;
-    // right: 0;
-    // width: 100%;
-    // height: 100%;
-    // background-color: rgba(0, 0, 0, 0.5);
-  
-    // border-radius: 0.5rem;
-    // opacity: 0;
     @apply absolute inset-0 w-full h-full bg-black/50 rounded-lg 
     opacity-0 transition-all duration-300;
-    // transition: all 0.3s ease;
   
     div {
-    //   width: 50px;
-    //   height: 50px;
-    //   border-radius: 50%;
-    //   background-color: rgba(0, 0, 0, 0.5);
-    //   color: #fff;
-  
-    //   margin: 1rem;
-    //   font-family: var(--font-base);
-    //   font-weight: 800;
-    //   cursor: pointer;
-    //   transition: all 0.3s ease;
       @apply w-[50px] h-[50px] rounded-full bg-black/50 text-white 
       m-4 font-extrabold cursor-pointer font-dmSans transition-all duration-300;
-    //   transition: all 0.3s ease;
   
       svg {
-        // width: 50%;
-        // height: 50%;
-        // color: var(--white-color);
         @apply w-1/2 h-1/2 text-white
       }
     }
 }
   
 .app__work-content {
-    // padding: 0.5rem;
-    // width: 100%;
-    // position: relative;
-    // flex-direction: column;
     @apply p-2 w-full relative flex-col;
   
     h4 {
-    //   margin-top: 1rem;
-    //   line-height: 1.5;
-  
-    //   @media screen and (min-width: 2000px) {
-    //     margin-top: 3rem;
-    //   }
       @apply mt-4 xxl:mt-12 leading-6;
     }
   
     .app__work-tag {
-    //   position: absolute;
-  
-    //   padding: 0.5rem 1rem;
-    //   border-radius: 10px;
-    //   background-color: #fff;
-    //   top: -25px;
       @apply absolute py-2 px-4 rounded-[10px] bg-white top-[-25px];
     }
 }

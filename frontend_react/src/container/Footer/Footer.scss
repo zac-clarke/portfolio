@@ -1,157 +1,59 @@
 .app__footer {
-    // flex: 1;
-    // width: 100%;
-    // flex-direction: column;
-  
-    // @media screen and (max-width: 768px) {
-    //   flex-direction: column;
-    // }
     @apply flex-1 w-full flex-col;
 }
   
-.app__footer-cards {
-    // width: 60%;
-    // display: flex;
-    // justify-content: space-evenly;
-    // align-items: center;
-    // flex-wrap: wrap;
-    // margin: 4em 2rem 2rem;
-  
-  
-    .app__footer-card {
-    //   min-width: 290px;
-    //   display: flex;
-    //   flex-direction: row;
-    //   justify-content: flex-start;
-    //   align-items: center;
-  
-    //   margin: 1rem 0;
-    //   padding: 1rem;
-    //   border-radius: 10px;
-    //   cursor: pointer;
-    //   background-color: #fef4f5;
-  
-    //   transition: all 0.3s ease-in-out;
-  
-      img {
-        // width: 40px;
-        // height: 40px;
-        // margin: 0 0.7rem;
-        @apply w-[30px] h-[30px] xs:w-[40px] xs:h-[40px] my-0 mr-[0.7rem];
-      }
-  
-      p {
-        // font-weight: 500;
-        @apply font-medium;
-      }
-      a {
-        // text-decoration: none;
-        // font-weight: 500;
-        @apply no-underline font-medium;
-      }
+.app__footer-cards {  
+  @apply w-full md:w-3/5 flex justify-center gap-4 items-center m-8 mt-16;
 
-    //   &:hover {
-    //     box-shadow: 0 0 25px #fef4f5;
-    //   }
-  
-    //   @media screen and (max-width: 450px) {
-    //     width: 100%;
-    //   }
-
+    .app__footer-card {  
       @apply 
       flex flex-row justify-center items-center p-4 
       rounded-[10px] cursor-pointer bg-[#fef4f5] transition-all ease-in-out duration-300
       w-full xs:flex-1 sm:flex-none sm:w-auto sm:min-w-[220px] hover:shadow-[0_0_25px_#fef4f5];
-    }
-  
-    // @media screen and (max-width: 768px) {
-    //   width: 100%;
-    // }
 
-    @apply w-full md:w-3/5 flex justify-center gap-4 items-center m-8 mt-16;
-   
+      img {
+        @apply w-[30px] h-[30px] xs:w-[40px] xs:h-[40px] my-0 mr-[0.7rem];
+      }
+  
+      p {
+        @apply font-medium;
+      }
+
+      a {
+        @apply no-underline font-medium;
+      }  
+    } 
 }
   
 .app__footer-cards .app__footer-card:last-child {
-    // background-color: #f2f7fb;
     @apply bg-[#f2f7fb] hover:shadow-[0_0_25px_#f2f7fb];
+
     img {
         @apply my-0 mx-0 ml-[-0.7rem] ;
       }
 }
   
-// .app__footer-cards .app__footer-card:last-child:hover {
-//     box-shadow: 0 0 25px #f2f7fb;
-// }
-  
 .app__footer-form {
-    // width: 60%;
-    // flex-direction: column;
-    // margin: 1rem 2rem;
     @apply w-full md:w-3/5 my-4 mx-0 sm:mx-8 flex-col; 
   
     div {
-    //   width: 100%;
-  
-    //   margin: 0.75rem 0;
-    //   border-radius: 10px;
-    //   cursor: pointer;
-    //   background-color: var(--primary-color);
-  
-    //   transition: all 0.3s ease-in-out;
       @apply w-full my-3 mx-0 rounded-[10px] cursor-pointer bg-primary 
       transition-all ease-in-out duration-300 hover:shadow-[0_0_25px] hover:shadow-primary;
   
       input,
       textarea {
-        // width: 100%;
-        // padding: 0.95rem;
-        // border: none;
-        // border-radius: 7px;
-        // background-color: var(--primary-color);
-  
-        // font-family: var(--font-base);
-        // color: var(--secondary-color);
-        // outline: none;
         @apply w-full p-[0.95rem] border-none rounded-[7px] bg-primary font-dmSans text-secondary outline-none;
       }
   
       textarea {
-        // height: 170px;
         @apply h-[170px];
       }
-  
-    //   &:hover {
-    //     box-shadow: 0 0 25px var(--primary-color);
-    //   }
     }
   
     button {
-    //   padding: 1rem 2rem;
-    //   border-radius: 10px;
-    //   border: none;
-    //   background-color: var(--secondary-color);
-  
-    //   font-weight: 500;
-    //   color: var(--white-color);
-    //   outline: none;
-    //   margin: 2rem 0 0 0;
-    //   font-family: var(--font-base);
-  
-    //   transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-    //   cursor: pointer;
-  
-    //   &:hover {
-    //     background-color: #2430af;
-    //   }
       @apply 
       py-4 px-8 rounded-[7px] border-none bg-secondary 
       font-medium text-white outline-none m-0 mt-8 font-dmSans
       cursor-pointer transition-all hover:bg-secondary/90;
     }
-  
-    // @media screen and (max-width: 768px) {
-    //   width: 100%;
-    //   margin: 1rem 0;
-    // }
 }
