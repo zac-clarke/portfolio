@@ -32,7 +32,7 @@
   
   
     svg {
-      @apply h-3/4 w-3/4 fill-white;
+      @apply h-3/4 w-3/4 fill-white cursor-pointer;
     }
   
     div {
@@ -43,7 +43,7 @@
       shadow-[0_0_20px] shadow-black/10 md:hidden ;
   
       svg {
-        @apply w-9 h-9 fill-secondary my-2 mx-[150px];
+        @apply w-9 h-9 fill-secondary my-2 mx-[150px] cursor-pointer;
       }
   
       ul {
