@@ -6,12 +6,12 @@ export default {
     {
       name: 'name',
       title: 'Name',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'company',
       title: 'Company',
-      type: 'string',
+      type: 'string'
     },
     {
       name: 'imageurl',
@@ -24,7 +24,7 @@ export default {
     {
       name: 'feedback',
       title: 'Feedback',
-      type: 'string',
+      type: 'string'
     },
   ],
 }

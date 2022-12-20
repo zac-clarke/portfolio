@@ -2,6 +2,7 @@ import React from "react";
 import { About, Footer, Header, Skills, Testimonial, Work } from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
+// import "./App.css";
 
 function App() {
   return (
@@ -19,8 +20,10 @@ function App() {
       {/* TODO: assigned to Aftab */}
       <Skills />
       {/* TODO: assigned to Patrick */}
+      {/* <div className="mx-auto"> */}
       <Testimonial />
       {/* TODO: assigned to Julieta */}
+      {/* </div> */}
       <Footer />
     </div>
   );
