@@ -44,7 +44,7 @@
 
   @apply w-full sm:w-3/5 min-h-[320px] bg-white
   flex flex-col sm:flex-row p-8 rounded-[15px] 
-  transition-all duration-300 ease-in-out shadow-[0_0_30px_rgba(0,0,0,0.1)] 
+  transition-all duration-300 ease-in-out shadow-[0_0_30px] shadow-black/10
   xxl:min-h-[450px];
 }
 
@@ -71,7 +71,7 @@
     //   line-height: 3.5rem;
     // }
 
-    @apply text-xl leading-8 text-black font-dmSans xxl:text-[2rem] xxl:leading-[3.5rem];
+    @apply text-base leading-8 text-black font-dmSans xxl:text-[1.5rem] xxl:leading-[3rem];
   }
 
   h4 {
@@ -118,7 +118,7 @@
       //TODO: Julieta .. We cannot get the svg <> to text-white when we hover over the div! It only does it when we hover over the svg Thank you CSS Queen <3
       @apply
       w-[20px] h-[20px] xxl:w-[45px] xxl:h-[45px]
-      text-secondary hover:bg-secondary hover:text-white;
+      text-secondary;
     }
 
     // &:hover {
@@ -131,7 +131,7 @@
 
     @apply 
     w-[50px] h-[50px]
-    rounded-full m-4 transition-all duration-300 ease-in-out bg-white hover:bg-secondary;
+    rounded-full m-4 transition-all duration-300 ease-in-out bg-white hover:bg-secondary cursor-pointer;
   }
 
   @apply flex-row mt-4;

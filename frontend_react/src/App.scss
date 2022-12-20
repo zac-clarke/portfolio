@@ -86,7 +86,7 @@
   // text-align: left;
   // color: var(--gray-color);
   // line-height: 1.5;
-  @apply text-gray text-left leading-6 text-sm xxl:text-2xl;
+  @apply text-gray text-left leading-6 text-[0.8rem] xxl:text-2xl;
 
   // @media screen and (min-width: 2000px) {
   //   font-size: 1.75rem;
@@ -98,7 +98,7 @@
   // font-weight: 800;
   // color: var(--black-color);
   // text-align: left;
-  @apply text-base font-extrabold text-black text-left xxl:text-3xl;
+  @apply text-[0.9rem] xs:text-base font-extrabold text-black text-left xxl:text-3xl;
 
   // @media screen and (min-width: 2000px) {
   //   font-size: 2rem;
