@@ -18,7 +18,7 @@ function App() {
       {/* Done! assigned to Julieta */}
       <Work />
       {/* TODO: assigned to Aftab */}
-      {/* <Skills /> */}
+      <Skills />
       {/* TODO: assigned to Patrick */}
       {/* <div className="mx-auto"> */}
       <Testimonial />
