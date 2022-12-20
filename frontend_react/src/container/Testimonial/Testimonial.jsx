@@ -24,7 +24,6 @@ const Testimonial = () => {
     });
 
     client.fetch(brandsQuery).then((data) => {
-      console.log(data);
       setBrands(data);
     });
   }, []);
