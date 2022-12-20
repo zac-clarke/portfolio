@@ -7,7 +7,7 @@
     @apply flex justify-start items-center;
   
     img {
-      @apply  h-[35px]  3xl:h-[60px];
+      @apply  animate-spin h-[35px]  3xl:h-[60px];
     }
   }
   
