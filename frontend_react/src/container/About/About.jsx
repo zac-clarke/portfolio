@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 
-import { AppWrap, MotionWrap } from '../../wrapper/';
-import './About.scss';
+import { AppWrap, MotionWrap } from "../../wrapper/";
+import "./About.scss";
 // import './About.css';
-import { urlFor, client } from '../../client';
+import { urlFor, client } from "../../client";
 // import {images} from '../../constants';
 
 // const abouts = [
@@ -13,7 +13,6 @@ import { urlFor, client } from '../../client';
 //   { title: 'UI/UX', description: 'I am a good UI/UX', imgUrl: images.about03 },
 //   { title: 'Web Animations', description: 'I am a good web animator', imgUrl: images.about04 },
 // ]
-
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -28,29 +27,22 @@ const About = () => {
 
   return (
     <>
-        <h2 className="head-text">I Know that <span>Good Design</span> <br />means  <span>Good Business</span></h2>
+      <h2 className="head-text">
+        I Know that <span>Good Design</span> <br />
+        means <span>Good Business</span>
+      </h2>
 
-        <div className="app__profiles">
-          {abouts.map((about, index) => (
-            <motion.div
-              whileInView={{ opacity: 1 }}
-              whileHover={{ scale: 1.1 }}
-              transition={{ duration: 0.5, type: 'tween' }}
-              className="app__profile-item"
-              key={about.title + index}
-            >
-              <img className="rounded-[15px]"  src={urlFor(about.imgUrl)} alt={about.title} />
-              <h2 className="bold-text mt-[20px]" >{about.title}</h2>
-              <p className="p-text mt-[10px]">{about.description}</p>
-            </motion.div>
-          ))}
-        </div>
+      <div className="app__profiles">
+        {abouts.map((about, index) => (
+          <motion.div whileInView={{ opacity: 1 }} whileHover={{ scale: 1.1 }} transition={{ duration: 0.5, type: "tween" }} className="app__profile-item" key={about.title + index}>
+            <img className="rounded-[15px]" src={urlFor(about.imgUrl)} alt={about.title} />
+            <h2 className="bold-text mt-[20px]">{about.title}</h2>
+            <p className="p-text mt-[10px]">{about.description}</p>
+          </motion.div>
+        ))}
+      </div>
     </>
   );
 };
 
-export default AppWrap(
-  MotionWrap(About, 'app__about'),
-  'about',
-  'app__whitebg',
-);
+export default AppWrap(MotionWrap(About, "app__about"), "about", "bg-primary/5");
