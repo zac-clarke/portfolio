@@ -37,7 +37,7 @@
   // @media screen and (max-width: 450px) {
   //   padding: 4rem 1rem 2rem;
   // }
-  @apply flex-1 w-full flex-col px-4 pt-16 pb-8 md:py-16 md:px-8;
+  @apply flex-1 w-full flex-col px-4 pt-16 pb-8 xs:py-16 xs:px-8;
 }
 
 .copyright {
