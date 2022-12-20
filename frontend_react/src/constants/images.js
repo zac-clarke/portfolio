@@ -30,7 +30,7 @@ import aftab from "../assets/aftab.png";
 import zac from "../assets/zac.png";
 import circle from "../assets/circle.svg";
 import blob from "../assets/blob.svg";
-import logo from "../assets/logo.png";
+import logo from "../assets/pjaz_logo.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
