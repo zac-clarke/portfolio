@@ -7,9 +7,9 @@
 }
 
 .app__profile-item {
-  @apply w-[190px] xxl:w-[370px] flex flex-col m-[2rem] xxl:my-8 xxl:mx-16 justify-start items-start;
+  @apply w-[190px] 3xl:w-[370px] flex flex-col m-[2rem] 3xl:my-8 3xl:mx-16 justify-start items-start;
 
   img {
-    @apply w-full h-[170px] xxl:h-[320px] rounded-[15px] object-cover;
+    @apply w-full h-[170px] 3xl:h-[320px] rounded-[15px] object-cover;
   }
 }

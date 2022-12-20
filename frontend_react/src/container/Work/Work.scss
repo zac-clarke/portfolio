@@ -6,7 +6,7 @@
     @apply flex flex-row justify-start items-center flex-wrap mt-16 mb-8 mx-0;
   
     .app__work-filter-item {
-      @apply py-2 xxl:py-4 xxl:px-8 px-4 rounded-lg xxl:rounded-2xl bg-white text-black font-extrabold cursor-pointer m-2 hover:bg-secondary hover:text-white transition-all duration-300;
+      @apply py-2 3xl:py-4 3xl:px-8 px-4 rounded-lg 3xl:rounded-2xl bg-white text-black font-extrabold cursor-pointer m-2 hover:bg-secondary hover:text-white transition-all duration-300;
     }
   
     .item-active {        
@@ -18,14 +18,14 @@
     @apply flex flex-wrap justify-center items-center;
   
     .app__work-item {
-      @apply w-full xs:w-72 xxl:w-[470px] m-4 xs:m-8 p-4 xxl:p-5 flex-col 
-      rounded-lg xxl:rounded-xl bg-white text-black cursor-pointer 
+      @apply w-full xs:w-72 3xl:w-[470px] m-4 xs:m-8 p-4 3xl:p-5 flex-col 
+      rounded-lg 3xl:rounded-xl bg-white text-black cursor-pointer 
       shadow-sm hover:shadow-2xl transition-all duration-300;
     }
 }
   
 .app__work-img {
-    @apply w-full h-[230px] xxl:h-[350px] relative;
+    @apply w-full h-[230px] 3xl:h-[350px] relative;
   
     img {
       @apply w-full h-full rounded-lg object-cover;
@@ -50,7 +50,7 @@
     @apply p-2 w-full relative flex-col;
   
     h4 {
-      @apply mt-4 xxl:mt-12 leading-6;
+      @apply mt-4 3xl:mt-12 leading-6;
     }
   
     .app__work-tag {

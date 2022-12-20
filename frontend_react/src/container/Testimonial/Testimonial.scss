@@ -4,13 +4,13 @@
 
 .app__testimonial-item {
   img {
-    @apply w-[100px] h-[100px] xxl:w-[150px] xxl:h-[150px] rounded-full object-cover;
+    @apply w-[100px] h-[100px] 3xl:w-[150px] 3xl:h-[150px] rounded-full object-cover;
   }
 
   @apply w-full sm:w-3/5 min-h-[320px] bg-white
   flex flex-col sm:flex-row p-8 rounded-[15px] 
   transition-all duration-300 ease-in-out shadow-[0_0_30px] shadow-black/10
-  xxl:min-h-[450px];
+  3xl:min-h-[450px];
 }
 
 .app__testimonial-content {
@@ -19,7 +19,7 @@
   mt-8 sm:mt-auto p-0 sm:px-8;
 
   p {
-    @apply text-base leading-8 text-black font-dmSans xxl:text-[1.5rem] xxl:leading-[3rem];
+    @apply text-base leading-8 text-black font-dmSans 3xl:text-[1.5rem] 3xl:leading-[3rem];
   }
 
   h4 {
@@ -41,7 +41,7 @@
 
     svg {
       @apply
-      w-[20px] h-[20px] xxl:w-[45px] xxl:h-[45px]
+      w-[20px] h-[20px] 3xl:w-[45px] 3xl:h-[45px]
       text-secondary;
     } 
   } 
@@ -49,12 +49,12 @@
 
 .app__testimonial-brands {
   @apply
-  w-full sm:w-4/5 xxl:w-[210px]
-  flex flex-wrap mt-8 xxl:m-8;
+  w-full sm:w-4/5 3xl:w-[210px]
+  flex flex-wrap mt-8 3xl:m-8;
 
   div {
-    @apply w-[120px] sm:w-[150px] xxl:w-[210px]
-    m-4 sm:m-[1.5rem] xxl:m-8;
+    @apply w-[120px] sm:w-[150px] 3xl:w-[210px]
+    m-4 sm:m-[1.5rem] 3xl:m-8;
 
     img {
       @apply w-full h-auto object-cover grayscale hover:grayscale-0;
