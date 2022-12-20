@@ -1,119 +1,25 @@
-// #home {
-//   position: relative;
-//   background: url("../../assets/bgIMG.png");
-//   background-size: cover;
-//   background-position: center;
-//   background-repeat: repeat;
-
-//   // disable the default padding styles
-//   .app__wrapper {
-//     padding: 0;
-//   }
-// }
-
 #home {
   @apply relative bg-[url('../../assets/bgIMG.png')] bg-cover bg-center bg-repeat;
-  
+
   .app__wrapper {
     @apply p-0;
   }
 }
 
-// .app__header {
-//   flex: 1;
-//   width: 100%;
-//   height: 100%;
-//   flex-direction: row;
-
-//   padding: 6rem 2rem 0rem;
-
-//   @media screen and (min-width: 2000px) {
-//     padding-top: 8rem;
-//   }
-
-//   @media screen and (max-width: 1200px) {
-//     flex-direction: column;
-//   }
-
-//   @media screen and (max-width: 450px) {
-//     padding: 6rem 1rem 2rem; //TODO: I removed this. I find it useless
-//   }
-// }
-
 .app__header {
-  @apply flex-1 flex-col w-full h-full pt-24 px-8 pb-0 lg:flex-row xxl:pt-32
+  @apply flex-1 flex-col w-full h-full pt-24 px-8 pb-0 lg:flex-row xxl:pt-32;
 }
-
-// .app__header-info {
-//   flex: 0.65;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-start;
-//   height: 100%;
-
-//   margin: 0 2rem;
-
-//   @media screen and (max-width: 1200px) {
-//     width: 100%;
-//     margin-right: 0rem;
-//   }
-// }
 
 .app__header-info {
   @apply flex-[0.65] flex-col justify-start items-start w-full h-full my-0 mr-0 ml-8 lg:w-auto lg:mr-8;
 }
-
-// .app__header-badge {
-//   width: 100%;
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: flex-end;
-//   flex-direction: column;
-
-//   .badge-cmp,
-//   .tag-cmp {
-//     padding: 1rem 2rem;
-//     background: var(--white-color);
-//     border-radius: 15px;
-//     flex-direction: row;
-//     width: auto;
-
-//     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-//   }
-
-//   .tag-cmp {
-//     flex-direction: column;
-//     margin-top: 3rem;
-
-//     p {
-//       width: 100%;
-//       text-transform: uppercase;
-//       text-align: right;
-//     }
-//   }
-
-//   span {
-//     font-size: 2.5rem;
-
-//     @media screen and (min-width: 2000px) {
-//       font-size: 5rem;
-//     }
-//   }
-
-//   @media screen and (max-width: 1200px) {
-//     justify-content: flex-start;
-//     align-items: flex-start;
-//   }
-// }
 
 .app__header-badge {
   @apply w-full flex flex-col justify-start items-start lg:justify-end lg:items-end;
 
   .badge-cmp,
   .tag-cmp {
-    @apply py-4 px-8 bg-white rounded-2xl flex-row w-auto;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); //TODO: convert all box-shadows to tailwind
+    @apply py-4 px-8 bg-white rounded-2xl flex-row w-auto shadow-[0_0_20px] shadow-black/10;
   }
 
   .tag-cmp {
@@ -129,82 +35,11 @@
   }
 }
 
-// .app__header-circles {
-//   flex: 0.75;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-//   align-items: flex-start;
-//   height: 100%;
-//   margin-left: 1rem;
-
-//   div {
-//     width: 100px;
-//     height: 100px;
-//     border-radius: 50%;
-
-//     background: var(--white-color);
-//     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-
-//     img {
-//       width: 60%;
-//       height: 60%;
-//     }
-//   }
-
-//   // circles with different height & width
-
-//   div:nth-child(1) {
-//     width: 100px;
-//     height: 100px;
-//   }
-
-//   div:nth-child(2) {
-//     margin: 1.75rem;
-//     width: 150px;
-//     height: 150px;
-//   }
-
-//   div:nth-child(3) {
-//     width: 70px;
-//     height: 70px;
-//   }
-
-//   @media screen and (min-width: 2000px) {
-//     div:nth-child(2) {
-//       width: 400px;
-//       height: 400px;
-//     }
-
-//     div:nth-child(3) {
-//       width: 170px;
-//       height: 170px;
-//     }
-
-//     div:nth-child(1) {
-//       width: 200px;
-//       height: 200px;
-//     }
-//   }
-
-//   @media screen and (max-width: 1200px) {
-//     width: 100%;
-//     flex-direction: row;
-//     flex-wrap: wrap;
-//     margin-left: 0;
-
-//     div {
-//       margin: 1rem;
-//     }
-//   }
-// }
-
 .app__header-circles {
   @apply flex flex-[0.75] flex-wrap flex-row justify-evenly items-start w-full h-full m-4 ml-0 lg:flex-nowrap lg:flex-col lg:w-auto lg:ml-4;
 
   div {
-    @apply w-full h-full rounded-full bg-white m-4 lg:m-0;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    @apply w-full h-full rounded-full bg-white m-4 lg:m-0 shadow-[0_0_20px] shadow-black/10;
 
     img {
       @apply w-3/5 h-3/5;
@@ -223,36 +58,6 @@
     @apply w-[70px] h-[70px] xxl:w-[170px] xxl:h-[170px];
   }
 }
-
-// .app__header-img {
-//   flex: 1;
-//   height: 100%;
-
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: flex-end;
-//   position: relative;
-
-//   img {
-//     width: 100%;
-//     object-fit: contain;
-//     z-index: 1;
-//   }
-
-//   .overlay_circle {
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     z-index: 0;
-//     width: 100%;
-//     height: 90%;
-//   }
-
-//   @media screen and (max-width: 1200px) {
-//     margin: 2rem 0;
-//   }
-// }
 
 .app__header-img {
   @apply flex flex-1 h-full justify-end items-end relative my-8 lg:my-0;
