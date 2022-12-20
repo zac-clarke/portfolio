@@ -1,0 +1,202 @@
+.app__navbar {
+    // width: 100%;
+  
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+  
+    // padding: 1rem 2rem;
+    // background: rgba(255, 255, 255, 0.25);
+    // // box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    // backdrop-filter: blur(4px);
+    // -webkit-backdrop-filter: blur(4px);
+    // border: 1px solid rgba(255, 255, 255, 0.18);
+    // position: fixed;
+    // z-index: 2;
+
+    @apply w-full flex justify-between items-center py-[1rem] px-[2rem]
+     bg-white bg-opacity-25 backdrop-blur-sm border-white/[.18] fixed z-[2] md:justify-between;
+  }
+  
+  .app__navbar-logo {
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+    @apply flex justify-start items-center ;
+  
+    img {
+    //   width: 90px;
+    //   height: 20px;
+      @apply w-[90px] h-[20px] xxl:w-[180px] xxl:h-[40px] ;
+    //   TODO: xxl: w-[180px] h-[40px]
+  
+      // @media screen and (min-width: 2000px) {
+      //   width: 180px;
+      //   height: 40px;
+      // }
+    }
+  }
+  
+  .app__navbar-links {
+    // flex: 1;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  
+    // list-style: none;
+    @apply hidden flex-1 justify-center items-center list-none sm:flex;
+  
+    li {
+    //   margin: 0 1rem;
+    //   cursor: pointer;
+  
+    //   flex-direction: column;
+
+      @apply my-0 mx-4 cursor-pointer flex-col;
+  
+      div {
+        // width: 5px;
+        // height: 5px;
+        // background: transparent;
+        // border-radius: 50%;
+  
+        // margin-bottom: 5px;
+
+        @apply w-[5px] h-[5px] bg-transparent rounded-full mb-[5px] ;
+      }
+  
+      a {
+        // color: var(gray);
+        // text-decoration: none;
+        // flex-direction: column;
+  
+        // text-transform: uppercase;
+        // font-weight: 500;
+  
+        // transition: all 0.3s ease-in-out;
+
+        @apply  text-gray no-underline flex-col uppercase font-medium transition-all delay-300 ease-in-out md:flex  ;
+  
+        &:hover {
+        //   color: var(--secondary-color);
+          @apply text-secondary
+        }
+      }
+  
+      &:hover {
+        div {
+        //   background: orange;
+          @apply bg-secondary ; 
+        }
+      }
+    }
+  
+    // @media screen and (max-width: 900px) {
+    //   display: none;
+    // }
+  }
+  
+  .app__navbar-menu {
+    // width: 35px;
+    // height: 35px;
+    // border-radius: 50%; TODO: make this a circle instead
+    // position: relative;
+  
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // background-color: blue; 
+    @apply w-[35px] h-[35px] rounded-full  relative flex justify-center items-center bg-secondary sm:hidden  ;
+  
+  
+    svg {
+    //   width: 70%;
+    //   height: 70%;
+    //   color: white;
+      @apply h-3/4 w-3/4 fill-white ;
+      
+    }
+  
+    div {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 5;
+  
+      padding: 1rem;
+  
+      width: 80%;
+      height: 100vh;
+      
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-direction: column;
+      
+      background: url('../../assets/bgWhite.png');
+      background-color: white;
+      background-size: cover;
+      background-repeat: repeat;
+  
+      /* top box shadow */
+      box-shadow: 0px 0px 20px rgba(168, 168, 168, 0.15);
+      @apply fixed  top-0 right-0 bottom-0  z-[5] p-[1rem] w-4/5 h-screen 
+      flex  flex-col bg-[url('../../assets/bgWhite.png')] 
+      bg-white bg-cover bg-repeat shadow-lg md:hidden ;
+  
+      svg {
+        // width: 35px;
+        // height: 35px;
+        // //secxondary color
+        // color:black;
+        // margin: 0.5rem 1rem;
+        @apply w-9 h-9 fill-secondary my-2 mx-4 ;
+      }
+  
+      ul {
+        // list-style: none;
+        // margin: 0;
+        // padding: 0;
+        // height: 100%;
+        // width: 100%;
+  
+        // display: flex;
+        // justify-content: flex-start;
+        // align-items: flex-start;
+        // flex-direction: column;
+        @apply m-1 list-none m-0 p-0 h-full w-full flex justify-start items-start flex-col;
+  
+        li {
+          margin: 1rem;
+          @apply m-4;
+  
+          a {
+            color: gray;
+            // text-decoration: none;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 500;
+  
+            transition: all 0.3s ease-in-out;
+
+            @apply text-gray no-underline font-medium uppercase transition-all delay-300;
+  
+            &:hover {
+                //secondary color
+              color: blue;
+              @apply text-secondary;
+            }
+          }
+        }
+      }
+  
+    //   @media screen and (min-width: 900px) {
+    //     display: none;
+    //   }
+    // }
+  
+    // @media screen and (min-width: 900px) {
+    //   display: none;
+    }
+  }
