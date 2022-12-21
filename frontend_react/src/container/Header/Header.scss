@@ -60,13 +60,17 @@
 }
 
 .app__header-img {
-  @apply flex flex-1 flex-wrap justify-end items-end relative m-1 md:m-2 xl:m-6;
+  @apply flex flex-1 h-full justify-end items-end relative my-8 lg:my-0;
+ 
 
   img {
-    @apply w-1/2 object-contain z-10 p-2;
+    @apply w-full object-contain z-10 p-2;
   }
 
   .overlay_circle {
     @apply absolute left-0 right-0 bottom-0 z-0 w-full h-[90%] opacity-20;
   }
 }
+
+
+

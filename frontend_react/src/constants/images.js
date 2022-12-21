@@ -23,7 +23,7 @@ import about02 from "../assets/about02.png";
 import about03 from "../assets/about03.png";
 import about04 from "../assets/about04.png";
 
-import profile from "../assets/profile.png";
+import profile from "../assets/zac-profile.png";
 import pat from "../assets/pat.png";
 import julieta from "../assets/julieta.png";
 import aftab from "../assets/aftab.png";

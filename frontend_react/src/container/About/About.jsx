@@ -3,16 +3,7 @@ import { motion } from "framer-motion";
 
 import { AppWrap, MotionWrap } from "../../wrapper/";
 import "./About.scss";
-// import './About.css';
 import { urlFor, client } from "../../client";
-// import {images} from '../../constants';
-
-// const abouts = [
-//   { title: 'Web Development', description: 'I am a good web developer', imgUrl: images.about01 },
-//   { title: 'Web Design', description: 'I am a good web designer', imgUrl: images.about02},
-//   { title: 'UI/UX', description: 'I am a good UI/UX', imgUrl: images.about03 },
-//   { title: 'Web Animations', description: 'I am a good web animator', imgUrl: images.about04 },
-// ]
 
 const About = () => {
   const [abouts, setAbouts] = useState([]);
@@ -45,4 +36,4 @@ const About = () => {
   );
 };
 
-export default AppWrap(MotionWrap(About, "app__about"), "about", "bg-primary/5");
+export default AppWrap(MotionWrap(About, "app__about"), "about", "bg-white/5");

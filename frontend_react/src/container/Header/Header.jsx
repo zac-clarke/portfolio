@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 import AppWrap from "../../wrapper/AppWrap";
 import "./Header.scss";
+import { Divider } from "../../components";
 
 const scaleVariants = {
   whileInView: {
@@ -37,10 +38,10 @@ const Header = () => {
 
       <motion.div whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5, delayChildren: 0.5 }} className="app__header-img">
         <div className="app__header-img">
-          <img className="w-10" src={images.pat} alt="patrick" />
-          <img className="w-50" src={images.julieta} alt="julieta" />
+          <img className="w-10" src={images.profile} alt="patrick" />
+          {/* <img className="w-50" src={images.julieta} alt="julieta" />
           <img className="w-50" src={images.aftab} alt="aftab" />
-          <img className="w-50" src={images.zac} alt="zac" />
+          <img className="w-50" src={images.zac} alt="zac" /> */}
         </div>
         <motion.img whileInView={{ scale: [0, 1] }} transition={{ duration: 1, ease: "easeInOut" }} src={images.blob} alt="profile circle" className="overlay_circle" />
       </motion.div>
@@ -54,6 +55,7 @@ const Header = () => {
           );
         })}
       </motion.div>
+      <Divider color="white" />
     </div>
   );
 };
