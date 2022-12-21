@@ -6,7 +6,7 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 const Work = () => {
-  const pills = ["All", "UI/UX", "Web App", "Mobile App", "React JS"];
+  const pills = ["All", "Web App", "Website", "UI/UX", "React", "PHP", "Java", "Python"];
   const [activeFilter, setActiveFilter] = useState(pills[0]);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [works, setWorks] = useState([]);

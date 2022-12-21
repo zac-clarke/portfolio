@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { client } from "../../client";
+import { SocialMedia } from "../../components";
 
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
@@ -37,18 +38,18 @@ const Footer = () => {
     <>
       <h2 className="head-text"> Get in touch</h2>
       <div className="app__footer-cards">
-        {/* <div className="app__footer-card">
+        <div className="app__footer-card">
           <img src={images.email} alt="email" />
           <a href="mialto:example@mail.com" className="p-text">
-            example@mail.com
+            phenomenaljaz@gmail.com
           </a>
-        </div> */}
-        {/* <div className="app__footer-card">
+        </div>
+        <div className="app__footer-card">
           <img src={images.mobile} alt="email" />
           <a href="tel: +1 (123) 456-7890" className="p-text">
             +1 (123) 456-7890
           </a>
-        </div> */}
+        </div>
       </div>
 
       {!isFormSubmitted ? (
@@ -73,6 +74,10 @@ const Footer = () => {
           </h3>
         </div>
       )}
+      <div className="p-20">
+        <SocialMedia />
+        <div className="border-t border-gray pt-4">Copyright &copy; Phenomenal Jaz 2022</div>
+      </div>
     </>
   );
 };

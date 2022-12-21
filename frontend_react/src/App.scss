@@ -47,18 +47,18 @@
 }
 
 .app__social {
-  @apply hidden xs:flex justify-end items-center flex-col p-4;
+  @apply hidden xs:flex gap-3 justify-center items-center p-4;
 
   div {
     @apply 
     w-10 h-10 rounded-full bg-white my-1 mx-0 
     border border-solid border-lightGray 
     flex justify-center items-center
-    hover:bg-secondary hover:border-secondary
-    3xl:w-16 h-16 my-2 mx-0;
+    hover:bg-secondary hover:border-secondary hover:cursor-pointer
+    3xl:w-16 3xl:h-16 my-2 mx-0;
 
     svg {
-      @apply w-4 h-4 text-gray hover:text-white 3xl:w-8 3xl:h-8;
+      @apply w-4 h-4 text-gray 3xl:w-8 3xl:h-8;
     }
   }
 }
@@ -70,14 +70,3 @@
     @apply w-3 h-3 3xl:w-5 3xl:h-5 rounded-full bg-slate-300 hover:bg-secondary m-2;
   }
 }
-
-// @media screen and (max-width: 500px) {
-//   .app__navigation,
-//   .app__social {
-//     display: none;
-//   }
-
-//   .copyright {
-//     padding: 2rem;
-//   }
-// }
