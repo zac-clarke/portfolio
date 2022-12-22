@@ -1,7 +1,7 @@
 // require("dotenv").config();
 import sanityClient from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
-console.log();
+
 export const client = sanityClient({
   projectId: import.meta.env.VITE_SANITY_STUDIO_API_PROJECT_ID,
   dataset: "production",
