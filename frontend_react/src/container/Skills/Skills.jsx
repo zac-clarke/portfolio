@@ -42,6 +42,7 @@ const Skills = () => {
           })}
         </motion.div>
         <div className="app__skills-exp">
+          {/* FIXME: Sanity returning 2022 twice since it has 2 work experiences in it */}
           {experiences.map((experience, expIndex) => (expIndex === 0 || experience.year !== experiences[expIndex - 1].year) && (
             <motion.div className="app__skills-exp-item" key={experience.year + "-" + expIndex}>
               <div className="app__skills-exp-year">
@@ -49,14 +50,14 @@ const Skills = () => {
               </div>
               <motion.div className="app__skills-exp-works">
                 {experience.works.map((work, workIndex) => (
-                    <div key={work.name + workIndex} className="relative">
-                      <motion.div id={work.name} whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }} className="app__skills-exp-work">
-                        <h4 className="bold-text">{work.name}</h4>
-                        <p className="p-text">{work.company}</p>
-                      </motion.div>
-                      <Tooltip anchorId={work.name} content={work.desc} place="top" className="skills-tooltip absolute" />
-                    </div>
-                  ))}
+                  <div key={work.name + workIndex} className="relative">
+                    <motion.div id={work.name} whileInView={{ opacity: [0, 1] }} transition={{ duration: 0.5 }} className="app__skills-exp-work">
+                      <h4 className="bold-text">{work.name}</h4>
+                      <p className="p-text">{work.company}</p>
+                    </motion.div>
+                    <Tooltip anchorId={work.name} content={work.desc} place="top" className="skills-tooltip absolute" />
+                  </div>
+                ))}
               </motion.div>
             </motion.div>
           ))}
