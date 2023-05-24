@@ -17,6 +17,8 @@ import redux from "../assets/redux.png";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
+import java from "../assets/java.svg";
+import dotnet from "../assets/.netCore.svg";
 
 import profile from "../assets/zac-profile.png";
 import pat from "../assets/pat.png";
@@ -25,7 +27,7 @@ import aftab from "../assets/aftab.png";
 import zac from "../assets/zac.png";
 import circle from "../assets/circle.svg";
 import blob from "../assets/blob.svg";
-import logo from "../assets/pjaz_logo.png";
+import logo from "../assets/zac_logo.png";
 
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -70,4 +72,6 @@ export default {
   nb,
   skype,
   spotify,
+  java,
+  dotnet,
 };

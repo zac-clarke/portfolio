@@ -5,12 +5,15 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 const SocialMedia = () => (
   <div className="app__social">
     <div className="group">
-      <a href="https://www.linkedin.com/" target={"_blank"}>
+      <a
+        href="https://www.linkedin.com/in/zac-clarke-montreal"
+        target={"_blank"}
+      >
         <BsLinkedin className="group-hover:text-white" />
       </a>
     </div>
     <div className="group">
-      <a href="https://github.com/" target={"_blank"}>
+      <a href="https://github.com/zac-clarke" target={"_blank"}>
         <BsGithub className="group-hover:text-white" />
       </a>
     </div>

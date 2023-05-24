@@ -6,7 +6,7 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 const Work = () => {
-  const pills = ["All", "Web App", "Website", "UI/UX", "React", "PHP", "Java", "Python"];
+  const pills = ["All", "Web App", "Website", "UI/UX", "React", "PHP", "Java"];
   const [activeFilter, setActiveFilter] = useState(pills[0]);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [works, setWorks] = useState([]);
@@ -106,4 +106,8 @@ const Work = () => {
   );
 };
 
-export default AppWrap(MotionWrap(Work, "app__works"), "work", "bg-secondary/10");
+export default AppWrap(
+  MotionWrap(Work, "app__works"),
+  "work",
+  "bg-secondary/10"
+);
